@@ -1,8 +1,10 @@
 <?php
 //include "koneksi.php";
-$conn = mysqli_connect('rahmatmysqlserver.mysql.database.azure.com','rahmat@rahmatmysqlserver','Rmt025524123','dbdicoding');
+$conn = mysqli_connect('rahmatmysqlserver.mysql.database.azure.com','rahmat@rahmatmysqlserver','Rmt025524123','dbdicoding') or
+	die ( $conn -> error);
 
 if ($conn){
+	
 $name = $_POST['name'];
 $email = $_POST['email'];
 $job = $_POST['job'];
@@ -20,10 +22,7 @@ else
 	echo mysqli_error($conn);
 }
 }
-else
-{
-echo $conn -> error;
-}
+
 ?>
 
 
