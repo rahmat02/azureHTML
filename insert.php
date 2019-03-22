@@ -4,7 +4,7 @@ $conn = mysqli_connect('rahmatmysqlserver.mysql.database.azure.com','rahmat@rahm
 	die ( $conn -> error);
 
 if ($conn){
-	
+	echo "koneksi berhasil";
 $name = $_POST['name'];
 $email = $_POST['email'];
 $job = $_POST['job'];
@@ -24,5 +24,3 @@ else
 }
 
 ?>
-
-
