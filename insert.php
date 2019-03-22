@@ -22,7 +22,7 @@ else
 }
 else
 {
-echo "error";
+echo $conn -> error;
 }
 ?>
 
