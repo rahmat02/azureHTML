@@ -1,6 +1,6 @@
 <?php
 //include "koneksi.php";
-$conn = mysqli_connect('rahmatmysqlserver.mysql.database.azure.com','rahmat@rahmatmysqlserver','Rmt025524123','dbdicoding') or
+$conn = mysqli_connect('rahmatsrv.mysql.database.azure.com','rahmat@rahmatsrv','Rmt025524123','dbdicoding') or
 	die ( $conn -> error);
 
 if ($conn){
@@ -18,9 +18,7 @@ if(mysqli_query($conn,$sql))
 
 }
 else
-{
-	echo mysqli_error($conn);
-}
+echo "Registerd error";
 }
 
 ?>
